@@ -69,8 +69,6 @@ console.log(coder.nombre, coder.edad);
 
 //Ejercicio 5: Busca como imprimir en consola el tipo de dato de cada variable que hemos creado.
 
-
-
 //Escribe tu código aquí
 console.log(typeof string);
 console.log(typeof number);
