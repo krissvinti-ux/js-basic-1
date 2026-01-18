@@ -9,7 +9,7 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 //Ejercicio 1: Imprime en la consola "Bienvenida al bootcamp Femcoders de Factoría F5" y mira en tu navegador si sale el resultado.
 
 //Escribe tu código aquí
-console.log("Bienvenidos al bootcamp Femcoders F5 ");
+console.log("Bienvenida al bootcamp Femcoders de Factoría F5");
 
 
 //VARIABLES Y TIPOS DE DATOS
@@ -18,32 +18,35 @@ console.log("Bienvenidos al bootcamp Femcoders F5 ");
 //Escribe tu código aquí
 
 let string = "Hola mundo";
-console.log (string);
+console.log(string);
 
 let number = 5;
-console.log (number);
- 
-let siesprofesor= true;
-console.log (siesprofesor);
+console.log(number);
 
-let gato=(null);
-console.log (gato);
+let siesprofesor = true;
+console.log(siesprofesor);
 
-let direction= "Via 25";
-console.log (direction);
+let gato = null;
+console.log(gato);
 
-let course={
+let direction = "Via 25";
+console.log(direction);
+
+let indefinida;
+console.log(indefinida);
+
+let course = {
     name: "Femcoders",
-    duration:850,
-teacher:{
-    name:"Cris Mouta",
-    experience:40,
-    direction:"via 86",
+    duration: 850,
+    teacher: {
+        name: "Cris Mouta",
+        experience: 40,
+        direction: "via 86",
+    }
 }
-}
-console.log (course.duration, course.teacher.name);
+console.log(course.duration, course.teacher.name);
 
-let countries=[ "Ecuador", "México", "Cuba", ["Italia", "España","Alemania,"]];
+let countries = ["Ecuador", "México", "Cuba", ["Italia", "España", "Alemania,"]];
 console.log("Array:", countries);
 
 
@@ -51,25 +54,34 @@ console.log("Array:", countries);
 
 //Escribe tu código aquí
 
-const postres= [ "helado",  "tarta", "pastel",]
+const postres = ["helado", "tarta", "pastel",]
 console.log("Array:", postres);
 
 //Ejercicio 4: Crea una constante con un tipo de dato objeto llamado coder que contengan dos propiedades, nombre y edad e imprímelo en la consola.
 
 //Escribe tu código aquí
 
-let coder={
-    name: "Cristina",
-    age:28,
-    }
-console.log (coder.name, coder.age);
+const coder = {
+    nombre: "Cristina",
+    edad: 28,
+}
+console.log(coder.nombre, coder.edad);
 
 //Ejercicio 5: Busca como imprimir en consola el tipo de dato de cada variable que hemos creado.
 
 
 
 //Escribe tu código aquí
-
+console.log(typeof string);
+console.log(typeof number);
+console.log(typeof siesprofesor);
+console.log(typeof gato);
+console.log(typeof direction);
+console.log(typeof indefinida);
+console.log(typeof course);
+console.log(typeof countries);
+console.log(typeof postres);
+console.log(typeof coder);
 
 
 //OPERADORES ARITMÉTICOS
@@ -77,18 +89,18 @@ console.log (coder.name, coder.age);
 
 //Escribe tu código aquí
 
-let number1=698;
-let number2=999;
-let suma= number1+number2;
+let number1 = 698;
+let number2 = 999;
+let suma = number1 + number2;
 console.log(suma);
 
 
 //Ejercicio 7: Crea una varible que reste 2 números e imprime el resultado en consola.
 
 //Escribe tu código aquí
-let number3=9999;
-let number4=999;
-let resta= number3-number4;
+let number3 = 9999;
+let number4 = 999;
+let resta = number3 - number4;
 console.log(resta);
 
 
@@ -96,9 +108,9 @@ console.log(resta);
 //Ejercicio 8: Crea una varible que multiplique 2 números e imprime el resultado en consola.
 
 //Escribe tu código aquí
-let number5=2;
-let number6=9;
-let multiplicar= number5*number6;
+let number5 = 2;
+let number6 = 9;
+let multiplicar = number5 * number6;
 console.log(multiplicar);
 
 
@@ -106,9 +118,9 @@ console.log(multiplicar);
 
 //Escribe tu código aquí
 
-let number7=800;
-let number8=2;
-let dividir= number7/number8;
+let number7 = 800;
+let number8 = 2;
+let dividir = number7 / number8;
 console.log(dividir);
 
 
@@ -118,19 +130,19 @@ console.log(dividir);
 
 //Escribe tu código aquí
 
-let number9=1;
-let number10=2;
-let comparar=number9>number10;
-console.log("number9 is less to number10");
+let number9 = 1;
+let number10 = 2;
+let comparar = number9 > number10;
+console.log(comparar);
 
 
 // Ejercicio 10: Crea otra variable que compare las dos primeras variables creadas en el ejercicio anterior, para que el resultado impreso en la consola sea true.
 
 //Escribe tu código aquí
 
-let number11=1;
-let number12=2;
-let resultado=number11>number12;
+let number11 = 1;
+let number12 = 2;
+let resultado = number11 < number12;
 console.log(resultado);
 
 //Ejercicio 11: completa el ejercicio
@@ -143,14 +155,13 @@ console.log(comparacion)
 */
 let num1 = 15
 let num2 = 20
-let comparar1=num1<num2;
+let comparar1 = num1 < num2;
 console.log(comparar1);
 
 let num22 = 15
 let num4 = 20
-let comparar2=num22<num4;
-console.log(resultado);
-
+let comparar2 = num22 < num4;
+console.log(comparar2);
 
 
 //Ejercicio 12: completa el ejercicio
@@ -163,7 +174,7 @@ console.log(result)
 */
 let num3 = 1
 let num3AsString = "1"
-let result = num3 === num3AsString  
+let result = num3 === num3AsString
 console.log(result)
 
 
@@ -173,7 +184,7 @@ console.log(result)
 let result2 = //Realiza la operación de comparación que consideres con las dos variables del ejercicio anterior para que el resultado en consola sea true.
 console.log(result2)
 */
-let result2 = num3 == num3AsString   
+let result2 = num3 == num3AsString
 console.log(result2)
 
 
@@ -220,20 +231,20 @@ console.log(res6) */
 let a = 6;
 let b = 3;
 
-let res =  a < 10 && b > 1  
+let res = a < 10 && b > 1
 console.log(res)
 
-let res2 = a < 10 && b < 1   
+let res2 = a < 10 && b < 1
 console.log(res2)
 
-let res3 = a == 5 || b == 5  
+let res3 = a == 5 || b == 5
 console.log(res3)
 
-let res4 = a == 6 || b == 0  
+let res4 = a == 6 || b == 0
 console.log(res4)
 
-let res5 = a == 0 || b == 3  
+let res5 = a == 0 || b == 3
 console.log(res5)
 
-let res6 = a == 6 && b == 3  
+let res6 = a == 6 && b == 3
 console.log(res6)
